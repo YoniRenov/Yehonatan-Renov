@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color: rgb(137, 203, 225);">
+    <div style="text-align:center">
+        <h1>Welcome to Bringg's contact page !</h1>
+        <h2>Contact Us</h2>
+        <p>Are there any issues? please leave your details below !</p>
+      <div class="row">
+        <div class="column">
+          <img src="../static/contactUspic.jpg" style="width:500px">
+        </div>
+        <audio controls src="../static/ContactMusic.mp3" style=" background-color: rgb(98, 145, 237);
+              width: 300px;
+              padding: 30px;
+              margin: 30px;"></audio>
+        <div class="column" style="margin:50mm">
+          <form action="/action_page.php" style=" background-color: rgba(233, 184, 8, 0.774);
+          width: 300px;
+          border: 15px solid rgb(8, 110, 130);
+          padding: 50px;
+          margin: 50px;
+          text-align:center">
+            <br> 
+            <b>
+            <label for="fname">First Name</label>
+            <br>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name">
+            <br>
+            <label for="lname">Last Name</label>
+            <br>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name">
+            <br>
+            <label for="eMail">Email</label>
+            <br>
+            <input type="text" id="eMail" name="eMail" placeholder="....@$$$.com">
+            <br>
+            <label for="country">Country</label>
+            <br>
+            <select id="country" name="country">
+              <option value="Brazil">Brazil</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="USA">USA</option>
+            </select>
+            <br>
+            <label for="Application free text">Application free text</label>
+           <br>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <br>
+            <label for="file share">If there any file you would like to share, you welcome !</label>
+           <br>
+           <input type="file" id="file" name="file">
+            <br>
+            <input type="submit" value="Submit">
+        </b>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+    <nav>
+        <a href="Homepage.html">|Home Page|</a></li>
+    </nav>
+</body>
+</html>
