@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="YoniWeb.css">
+    <script defer src="YoniWeb.js"></script>
     <title>Document</title>
 </head>
-<body style = "background-color: rgb(137, 203, 225);">
-    <div style="text-align:center">
-        <h1>Welcome to Bringg's contact page !</h1>
-        <h2>Contact Us</h2>
-        <p>Are there any issues? please leave your details below !</p>
+<body >
+  <nav class="topNav">
+    <ul>
+        <img src="../static/manchesterCity.png" alt="" id="logo">
+        <li><a href="HomePage.html">Home</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+    <div class="Title">
+        <h1>Would like to join the best football team fan club?</h1>
+
       <div class="row">
         <div class="column">
-          <img src="../static/contactUspic.jpg" style="width:500px">
+          <img src="../static/contactUspic.jpg" style="width:300px">
         </div>
-        <audio controls src="../static/ContactMusic.mp3" style=" background-color: rgb(98, 145, 237);
-              width: 300px;
-              padding: 30px;
-              margin: 30px;"></audio>
-        <div class="column" style="margin:50mm">
-          <form action="/action_page.php" style=" background-color: rgba(233, 184, 8, 0.774);
-          width: 300px;
-          border: 15px solid rgb(8, 110, 130);
-          padding: 50px;
-          margin: 50px;
-          text-align:center">
+        <audio class="audioCon" controls src="../static/ContactMusic.mp3"></audio>
+
+          <form >
             <br> 
             <b>
             <label for="fname">First Name</label>
@@ -56,11 +56,18 @@
            <br>
            <input type="file" id="file" name="file">
             <br>
-            <input type="submit" value="Submit">
+          
+           
         </b>
             
           </form>
-        </div>
+          <br> <br>
+          <button onclick="rotate()"> Submit</button>
+          
+          <div class="sendDiv">
+            <div id="imgM"></div>
+           </div>
+       
       </div>
     </div>
     <nav>
