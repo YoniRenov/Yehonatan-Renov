@@ -18,7 +18,7 @@ TextDiv.addEventListener("mouseout",BoldBorderOut);
 
 function BoldBorder(){
   TextDiv.style.WebkitBorderImage= "linear-gradient(to left, rgba(172, 199, 225, 0.4), rgb(27, 39, 69)) 1 0 "; 
- 
+
 }
 function BoldBorderOut(){
   TextDiv.style.WebkitBorderImage= ""; 

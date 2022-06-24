@@ -1,4 +1,4 @@
-.topNav{
+.topNav{/*עיצוב שורת סרגל גלים*/
 
   overflow: hidden;
   background-color: rgb(27, 39, 69);
@@ -13,7 +13,7 @@
   
 
 }
-ul li a.active {
+ul li a.active {/*עיצוב כפתור פעיל*/
   background-color: rgb(175, 192, 235);
   color: #111214;
   top:0px; 
@@ -21,17 +21,16 @@ ul li a.active {
 }
 
 
-li {
+li {                                     /*איחוד כפתורים בניווט שיהיו ביחד */
   display: inline;
  
 }
-.topNav a:hover {
+
+.topNav a:hover { /*מה קורה כשאני עובר עם העכבר על אופציה בסרגל ניווט שעוד לא נבחרה*/
   background-color: #ddd;
   color: black;
- 
-  
 }
-.topNav a {
+.topNav a {/*עיצוב הבלוקים בסרגל הכלים*/
   float: right;
   color: #9ba4b3;
   text-align: center;
@@ -44,7 +43,7 @@ li {
  
 }
 
-#logo{
+#logo{/*עיצוב התמונה של סרגל הכלים*/
   position:absolute;
   top:0px; 
   left:0px;
@@ -52,7 +51,7 @@ li {
   height:80px;
   overflow:hidden;
 }
-#imgM{
+#imgM{/*הגדרת תמונת מטוס*/
   visibility: hidden;
   
   position:absolute;
@@ -66,43 +65,45 @@ li {
   
 }
 
-.sendDiv{
-  visibility: hidden;
+.sendDiv{/*מלבן מסתובב בשביל המטוס*/
+  visibility: visible;
   width:20%;
   height:100px;
   position:absolute;
   animation: 3s linear 0s infinite running orbit ;
- 
   left:40%;
 }
-@keyframes orbit { 
+@keyframes orbit { /*יכולת סיבוב 360 עבור מלבן*/
   from { -webkit-transform:rotate(0deg) } 
   to { -webkit-transform:rotate(360deg) } }
 
 
 
-h1{
+h1{/*עיצוב כותרת*/
   font-size: 50px;
   text-align: center;
-  /*margin: 3rem 0;*/
+  margin: 3rem 0;
+
  
 }
-.Title{
- 
+.Title{/*עיצוב כותרת*/
+  font-size: 50px;
+  text-align: center;
+  margin: 3rem 0;
   font-weight: normal;
   color: #444;
   text-align: center;
   grid-area: title;
 }
 
-.wrapper{
+.wrapper{/*עיצוב כל מסגרת הקונטיינרים*/
  
   width: 90%;
   margin: 0 auto;
    grid-area: photos;
 
 }
-body{
+body{/*עיצוב כל גוף האתר*/
   font-family: 'Montserrat';
   display: grid;
   grid-template-rows: 100px 200px;
@@ -113,7 +114,7 @@ body{
   
   ;
 }
-.audioCon{ 
+.audioCon{ /*עיצוב נגן המדיה*/
   background-image: linear-gradient(to bottom right, rgba(172, 199, 225, 0.4), rgb(27, 39, 69));
   width: 300px;
   padding: 50px;
@@ -121,15 +122,15 @@ body{
   border-radius: 40%;
               
 }
-form{
+form{/*עיצוב מסמך*/
   font-size: 20px;
 }
-input{
+input{/*עיצוב אינפוטים*/
   padding: 10px;
 }
 
 
-.aside {
+.aside {/*עיצוב טקסט צדדי*/
   font-size: 20px;
  
   border-image: linear-gradient(to left, rgba(172, 199, 225, 0.4), rgb(27, 39, 69)) 1 0  ;
@@ -141,7 +142,7 @@ input{
  
 }
 
-.cols{
+.cols{/* דואג לשים את כולם באזור של ראפר ולחלק ל4 טורים ו2 שורות*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,13 +154,13 @@ input{
    justify-content: center;     
 }
 
-.col{
+.col{/*כמו קונטיינר*/
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
 }
 
-.container{
+.container{/*דואג לסדר את הסיבוב של הקונטיינר כמו שצריך*/
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 1000px;
@@ -167,7 +168,7 @@ input{
 }
 
 .front,
-.back{
+.back{/*עיצוב מקדימה ומאחורה של כל קונטיינר*/
   background-size: cover;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
   border-radius: 10px;
@@ -187,14 +188,14 @@ input{
   font-size: 1.5rem;
 }
 
-.back{
+.back{/*עיצוב למאחורה*/
   background: #cedce7;
   background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
   background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
   background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
 }
 
-.front:after{
+.front:after{/*עיצוב מקדימה לאחר סיבוב*/
   position: absolute;
     top: 0;
     left: 0;
@@ -210,7 +211,7 @@ input{
     border-radius: 10px;
 }
 .container:hover .front,
-.container:hover .back{
+.container:hover .back{/*- מה קורה בעת סיבובמיותררררררררררררררררררררררררררררררררררררררררררררררררררררררררר*/
     -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -218,14 +219,14 @@ input{
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
-.back{
+.back{/* לאחר סיבוב הצד האחורי ייפתח באותו מקום*/
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.inner{
+.inner{/*עיצוב התנהגות התוכן בקונטיינרים*/
     -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
             transform: translateY(-50%) translateZ(60px) scale(0.94);
     top: 50%;
@@ -241,41 +242,41 @@ input{
     z-index: 2;
 }
 
-.container .back{
+.container .back{/*סיבוב קונטיינרים*/
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
 
-.container .front{
+.container .front{/*סיבוב קונטיינרים*/
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
 
-.container:hover .back{
+.container:hover .back{/*סיבוב קונטיינרים*/
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
 
-.container:hover .front{
+.container:hover .front{/*סיבוב קונטיינרים*/
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
 
-.front .inner p{
+.front .inner p{/* עיצוב טקסט פנימי בפרונט*/
   font-size: 2rem;
   margin-bottom: 2rem;
   position: relative;
 }
 
-.front .inner p:after{
+.front .inner p:after{/* עיצוב טקסט פנימי בפרונט לאחר סיבוב*/
   content: '';
   width: 4rem;
   height: 2px;
@@ -288,12 +289,12 @@ input{
   bottom: -.75rem;
 }
 
-.front .inner span{
+.front .inner span{/*עיצוב כותרת שחקן לאחר סיבוב*/
   color: rgba(255,255,255,0.7);
   font-weight: 300;
 }
 
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 64rem){/*גריד מסך מלא */
 
   body{
 
@@ -310,14 +311,14 @@ input{
   }
 }
 
-@media screen and (max-width: 48rem){
+@media screen and (max-width: 48rem){/*גריד חצי מסך */
 
   .col{
     width: calc(50% - 2rem);
   }
 }
 
-@media screen and (max-width: 32rem){
+@media screen and (max-width: 32rem){/*גריד רבע מסך */
   .col{
     width: 100%;
     margin: 0 0 2rem 0;
